@@ -1,0 +1,115 @@
+body {
+  font-family: "Lora";
+  font-size: 18px;
+  color: #ffffff;
+  /*Acts as a multiplier of the font, making here 18 * 1.5 = 27.5 */
+  line-height: 1.5;
+  /* by default, background images will tile/repeat across the whole background of an element */
+  background-image: url("background.svg");
+  max-width: 640px;
+  /* Using left and right auto centers the element on the page */
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 40px;
+}
+
+header {
+  background-color: #ffffff;
+  /* padding creates space around the outside of our content and pushes the edges of the box away */ 
+  padding: 40px;
+}
+
+nav {
+  background-color: #f05d5d;
+  padding: 20px 40px 20px 40px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #ffffff;
+  margin-right: 10px;
+}
+
+nav a:hover {
+  color: #5000ff;
+  border-bottom: solid 2px #fff;
+}
+
+section {
+  background-color: #5000ff;
+  padding: 40px;
+}
+
+h2 {
+  font-size: 32px;
+  line-height: 1.2;
+}
+
+.image {
+  padding: 0;
+}
+
+blockquote {
+  font-size: 32px;
+  line-height: 1.2;
+  font-style: italic;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.map {
+  width: 100%;
+}
+
+.contact p {
+  margin-top: 20px;
+}
+
+.contact a {
+  color: #ffffff;
+  text-decoration: none;
+  border-bottom: solid 2px #f05d5d;
+  padding-bottom: 1px;
+}
+
+@media (max-width:740px) {
+  
+  section, header {
+    padding: 20px;
+  }
+  
+  nav {
+    padding: 10px 20px 10px 20px;
+  }
+  h2, blockquote {
+    font-size: 24px;
+  }
+  body {
+    padding-top:  0;
+    font-size: 16px;
+  }
+  nav a {
+    display:  block;
+  }
+  nav a:hover {
+    border: none;
+  }
+  blockquote {
+    margin: 0px;
+  }
+}
+
+@media (min-width: 1000px) {
+  body {
+    font-size: 22px;
+  }
+}
+
+@media (min-width: 2000px) {
+  body {
+    font-size:  26px;
+  }
+  section {
+    padding: 60px;
+  }
+}
